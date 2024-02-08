@@ -1,9 +1,8 @@
 import React, { useRef, useState } from 'react';
 import upload from '../public/upload.svg';
 import image from '../public/image.svg';
-import Latex from 'react-latex';
 
-function Home() {
+function Home2() {
   const fileInputRef = useRef(null);
   const [answer, setAnswer] = useState(null); // State to hold the answer
   const [showAnswer, setShowAnswer] = useState(false); // State to track if the answer should be shown
@@ -17,7 +16,7 @@ function Home() {
     const formData = new FormData();
     formData.append('image', file);
 
-    const response = await fetch('http://127.0.0.1:3001/convert', {
+    const response = await fetch('http://127.0.0.1:3001/convert/subjective', {
       method: 'POST',
       body: formData,
     });
@@ -61,8 +60,8 @@ function Home() {
           textAlign: 'center',
           zIndex:  9999,
         }}>
-         <h2>Answer:</h2>
-          <Latex>{answer}</Latex>
+          <h2>Answer:</h2>
+          <p>{answer}</p>
         </div>
       ):(
 <>
@@ -138,4 +137,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home2
