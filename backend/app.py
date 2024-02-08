@@ -33,7 +33,7 @@ def convert_image():
         data = np.array(img.convert('RGB'))
 
     res, elapse = model(data)
-
+    temp_file.close()  
     os.remove(temp_file.name)
 
     # Use the OCR result as a prompt for the GPT-3 model
@@ -60,7 +60,7 @@ def easyocr_convert_image():
     image.save(temp_file.name)
 
     res = reader.readtext(temp_file.name)
-
+    temp_file.close()  
     os.remove(temp_file.name)
 
     # Use the OCR result as a prompt for the GPT-3 model
@@ -82,4 +82,4 @@ def home():
     return "api chall ra , go to postman"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="127.0.0.1",port=3001, debug=True)
