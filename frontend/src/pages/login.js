@@ -42,7 +42,7 @@ function Login() {
       .then((userCredential) => {
         // Signed in  
         const user = userCredential.user;
-        navigate('/home');
+        navigate('/Help');
         console.log('nahi chal raha ')
       })
       .catch((error) => {
@@ -58,7 +58,7 @@ function Login() {
       .then((data) => {
         setValue(data.user.email);
         localStorage.setItem('email', data.user.email);
-        navigate('/home');
+        navigate('/Help');
        
       })
       .catch((error) => {

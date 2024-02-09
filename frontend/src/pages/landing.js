@@ -1,36 +1,47 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../components/style.css';
 
 
-const YourReactComponent = () => {
+const Landing = () => {
     const navigate = useNavigate();
+   
+    
+  
 
     const handleGetStartedClick = () => {
-      navigate('/login');
+        navigate('/login');
     };
 
     const navAbout = () => {
-navigate('/about');
+        navigate('/about');
     };
 
     const navContributor = () => {
-      navigate('/contributors');
-          };
+        navigate('/contributors');
+    };
 
-          const navHelp = () => {
-            navigate('/help');
-                };
 
+    
     return (
-        <div>
-        <meta charSet="utf-8" />
+     
+
+
+<div >
+
+
+<meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rammetto One:wght@400&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
         <style dangerouslySetInnerHTML={{__html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
-        <div style={{width: '100%', position: 'relative',  backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '33px 0px 250px', boxSizing: 'border-box', gap: '199px', letterSpacing: 'normal', textAlign: 'left', fontSize: '70px', color: '#fff', fontFamily: 'Inika'}}>
+       
+       
+       
+        <div style={{width: '100%', position: 'relative' ,  backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '33px 0px 250px', boxSizing: 'border-box', gap: '199px', letterSpacing: 'normal', textAlign: 'left', fontSize: '70px', color: '#fff', fontFamily: 'Inika'}}>
+      
           <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-end', padding: '0px 20px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
             <div style={{flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '20px', maxWidth: '100%'}}>
               <header style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'flex-start', gap: '50px', maxWidth: '100%', textAlign: 'left', fontSize: '24px', color: '#fff', fontFamily: 'Inter'}}>
@@ -43,14 +54,10 @@ navigate('/about');
                     About
                   </div>
                 </div>
-                <div style={{height: '38px', width: '98px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 0px', boxSizing: 'border-box'}}>
-                  <div onClick={navHelp} style={{cursor:'pointer',width: '54.6px', position: 'relative', fontWeight: 500, display: 'inline-block'}}>
-                    Help
-                  </div>
-                </div>
+            
                 <div style={{height: '38px', width: '184px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 0px', boxSizing: 'border-box'}}>
                   <div onClick={navContributor} style={{cursor:'pointer',height: '29px', position: 'relative', fontWeight: 500, display: 'inline-block'}}>
-                    Contributors
+                   Creaters
                   </div>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 12px'}}>
@@ -104,9 +111,13 @@ navigate('/about');
             </button>
           </div>
         </div>
+       
+    
+
+        
       </div>
     );
 };
 
-export default YourReactComponent;
+export default Landing;
 

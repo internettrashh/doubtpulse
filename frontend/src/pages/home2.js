@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import upload from '../public/upload.svg';
 import image from '../public/image.svg';
+import Latex from 'react-latex';
 
 function Home2() {
   const fileInputRef = useRef(null);
@@ -43,26 +44,34 @@ function Home2() {
     <style dangerouslySetInnerHTML={{__html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
     <div style={{width: '100%', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', padding: '37px 0px 0px', boxSizing: 'border-box', gap: '310px', letterSpacing: 'normal', textAlign: 'left', fontSize: '32px', color: '#fff', fontFamily: 'Urbanist'}}>
 
-{showAnswer ? (
-        <div style={{
-          position: 'fixed',
-          top:  0,
-          left:  0,
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: '#1e1e1e',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          color: '#fff',
-          fontSize: '2em',
-          textAlign: 'center',
-          zIndex:  9999,
-        }}>
-          <h2>Answer:</h2>
-          <p>{answer}</p>
-        </div>
+    {showAnswer ? (
+   <div style={{
+    width: '100vw', // Changed from '100%' to '100vw' to cover the full viewport width
+    height: '100vh', // Added to cover the full viewport height
+    
+    position: 'relative',
+    backgroundColor: '#1e1e1e',
+    overflow: 'auto', // Changed from 'hidden' to 'auto' to allow scrolling if content overflows
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '37px  0px  0px',
+    boxSizing: 'border-box',
+    gap: '310px',
+    letterSpacing: 'normal',
+    textAlign: 'left',
+    fontSize: '32px',
+    color: '#fff',
+    fontFamily: 'Urbanist'
+  }}>
+    <div style={{border:'6px',borderRadius:'20px' , borderColor:'white', width:'70vw', height:'10vh'}}>
+        <div style={{alignSelf: 'stretch', height: '78px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
+        <h2 style={{ color: 'white ', fontSize: '30px' }}>Answer:</h2>
+      <Latex>{answer}</Latex>
+      </div>
+   </div>
+  </div>
       ):(
 <>
       <section style={{width: '1602px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 20px', boxSizing: 'border-box', position: 'relative', maxWidth: '100%', textAlign: 'left', fontSize: '60px', color: '#fff', fontFamily: 'Urbanist'}}>
@@ -81,7 +90,7 @@ function Home2() {
         <div style={{flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 96px 0px', boxSizing: 'border-box', maxWidth: '100%', fontSize: '56px'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '55px', maxWidth: '100%'}}>
             <h2 style={{margin: 0, height: '67px', position: 'relative', fontSize: 'inherit', fontWeight: 800, fontFamily: 'inherit', display: 'inline-block', maxWidth: '100%', zIndex: 1}}>
-              Get your doubts solved!
+            Get any Math Doubt Solved in Seconds!!!
             </h2>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '22px', maxWidth: '100%', fontSize: '35px'}}>
               <button style={{cursor: 'pointer', border: 'none', padding: 0, backgroundColor: 'transparent', width: '70px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
