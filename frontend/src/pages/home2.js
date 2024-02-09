@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import upload from '../public/upload.svg';
 import image from '../public/image.svg';
 import Latex from 'react-latex';
-import loader from '../public/loader-purple.gif'
+import loader from '../public/loader-purple-ezgif.com-gif-maker.gif'
 
 function Home2() {
   
