@@ -2,43 +2,80 @@ import React, { useRef, useState } from 'react';
 import upload from '../public/upload.svg';
 import image from '../public/image.svg';
 import Latex from 'react-latex';
-import loader from '../public/Animation - 1707498744662.gif'
+import loader from '../public/loader-purple.gif'
 
 function Home() {
   const fileInputRef = useRef(null);
   const [answer, setAnswer] = useState(null); // State to hold the answer
   const [showAnswer, setShowAnswer] = useState(false); // State to track if the answer should be shown
-  const [isLoading, setIsLoading] = useState(false);
-  
-  
+  const [isLoading, setIsLoading] = useState(false); // State to track loading status
   
   const handleUploadClick = (event) => {
     fileInputRef.current.click();
   };
+
   const handleFileChange = async (event) => {
-    setIsLoading(true); // Start loading
-    const file = event.target.files[0];
-    const formData = new FormData();
-    formData.append('image', file);
-  
-    const response = await fetch('http://127.0.0.1:3001/convert', {
-      method: 'POST',
-      body: formData,
-    });
-  
-    if (!response.ok) {
-      console.error('Upload failed');
-      setIsLoading(false); // End loading
-      return;
+    setIsLoading(true); // Set loading to true when uploading
+
+    try {
+      const file = event.target.files[0];
+      const formData = new FormData();
+      formData.append('image', file);
+
+      const response = await fetch('http://127.0.0.1:3001/convert', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error('Upload failed');
+      }
+
+      const result = await response.text();
+      setAnswer(result); // Update the answer state
+      setShowAnswer(true); // Set the flag to show the answer
+    } catch (error) {
+      console.error('Error:', error.message);
+    } finally {
+      setIsLoading(false); // Set loading to false when upload is complete (success or failure)
     }
-  
-    const result = await response.text();
-    setAnswer(result); // Update the answer state
-    setShowAnswer(true); // Set the flag to show the answer
-    setIsLoading(false); // End loading
   };
+
+
+
+
   
   return (
+    <div>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rammetto One:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" />
+   
+    <style dangerouslySetInnerHTML={{ __html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
+    <div style={{ width: '100%', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', padding: '37px 0px 0px', boxSizing: 'border-box', gap: '310px', letterSpacing: 'normal', textAlign: 'left', fontSize: '32px', color: '#fff', fontFamily: 'Urbanist' }}>
+
+      <div style={{ width: '100vw', height: '100vh', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '37px 0px 0px', boxSizing: 'border-box', gap: '310px', letterSpacing: 'normal', textAlign: 'left', fontSize: '32px', color: '#fff', fontFamily: 'Urbanist' }}>
+        {isLoading ? (
+          <img src={loader} alt="Loading..." style={{ width: '400px', height: '400px' }} />
+        ) : (
+          renderContent()
+        )}
+      </div>
+    </div>
+  </div>
+);
+
+
+
+function renderContent() {
+  return (
+
+
     <div>
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -148,8 +185,9 @@ function Home() {
     
     </div>
     
-  </div>
-  )
+  </div>   
+  );
+      }
 }
 
 export default Home

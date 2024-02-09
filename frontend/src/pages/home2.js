@@ -2,37 +2,78 @@ import React, { useRef, useState } from 'react';
 import upload from '../public/upload.svg';
 import image from '../public/image.svg';
 import Latex from 'react-latex';
+import loader from '../public/loader-purple.gif'
 
 function Home2() {
+  
   const fileInputRef = useRef(null);
-  const [answer, setAnswer] = useState(null); // State to hold the answer
-  const [showAnswer, setShowAnswer] = useState(false); // State to track if the answer should be shown
+  const [answer, setAnswer] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleUploadClick = (event) => {
     fileInputRef.current.click();
   };
 
   const handleFileChange = async (event) => {
-    const file = event.target.files[0];
-    const formData = new FormData();
-    formData.append('image', file);
+    setIsLoading(true);
 
-    const response = await fetch('http://127.0.0.1:3001/convert/subjective', {
-      method: 'POST',
-      body: formData,
-    });
+    try {
+      const file = event.target.files[0];
+      const formData = new FormData();
+      formData.append('image', file);
 
-    if (!response.ok) {
-      console.error('Upload failed');
-      return;
+      const response = await fetch('http://127.0.0.1:3001/convert/subjective', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error('Upload failed');
+      }
+
+      const result = await response.text();
+      setAnswer(result);
+      setShowAnswer(true);
+    } catch (error) {
+      console.error('Error:', error.message);
+    } finally {
+      setIsLoading(false);
     }
-
-    const result = await response.text();
-    setAnswer(result); // Update the answer state
-    setShowAnswer(true); // Set the flag to show the answer
   };
+
   
   return (
+    <div>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rammetto One:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" />
+   
+    <style dangerouslySetInnerHTML={{ __html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
+    <div style={{ width: '100%', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', padding: '37px 0px 0px', boxSizing: 'border-box', gap: '310px', letterSpacing: 'normal', textAlign: 'left', fontSize: '32px', color: '#fff', fontFamily: 'Urbanist' }}>
+
+      <div style={{ width: '100vw', height: '100vh', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '37px 0px 0px', boxSizing: 'border-box', gap: '310px', letterSpacing: 'normal', textAlign: 'left', fontSize: '32px', color: '#fff', fontFamily: 'Urbanist' }}>
+        {isLoading ? (
+          <img src={loader} alt="Loading..." style={{ width: '400px', height: '400px' }} />
+        ) : (
+          renderContent()
+        )}
+      </div>
+    </div>
+  </div>
+);
+
+
+
+function renderContent() {
+  return (
+
+
     <div>
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -90,7 +131,7 @@ function Home2() {
         <div style={{flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 96px 0px', boxSizing: 'border-box', maxWidth: '100%', fontSize: '56px'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '55px', maxWidth: '100%'}}>
             <h2 style={{margin: 0, height: '67px', position: 'relative', fontSize: 'inherit', fontWeight: 800, fontFamily: 'inherit', display: 'inline-block', maxWidth: '100%', zIndex: 1}}>
-            Get any Math Doubt Solved in Seconds!!!
+           Get any Theory question Solved !!!
             </h2>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '22px', maxWidth: '100%', fontSize: '35px'}}>
               <button style={{cursor: 'pointer', border: 'none', padding: 0, backgroundColor: 'transparent', width: '70px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
@@ -142,8 +183,9 @@ function Home2() {
     
     </div>
     
-  </div>
-  )
+  </div>   
+  );
+      }
 }
 
-export default Home2
+export default Home2;
