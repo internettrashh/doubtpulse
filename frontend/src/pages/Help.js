@@ -1,38 +1,71 @@
-import React from 'react'
+import React from 'react';
 import learning from '../public/learning-illustration.svg';
-import {useNavigate} from 'react-router-dom';
-
-
+import { useNavigate } from 'react-router-dom';
 
 function Help() {
   const navigate = useNavigate();
 
- const  navMath =() =>{
-  navigate('/math');
- }
+  const navMath = () => {
+    navigate('/math');
+  };
 
- const navSub = () => {
-  navigate('/sub');
- }
+  const navSub = () => {
+    navigate('/sub');
+  };
+
   return (
     <div>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rammetto One:wght@400&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" />
-    <style dangerouslySetInnerHTML={{__html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
-    <div style={{width: '100%', position: 'relative',  backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'flex-start', rowGap: '20px', letterSpacing: 'normal', textAlign: 'left', fontSize: '80px', color: '#fff', fontFamily: '"Bodoni MT"'}}>
-      <div style={{flex: '0.9641', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 31px 0px 0px', boxSizing: 'border-box', minWidth: '562px', minHeight: '1117px', maxWidth: '100%'}}>
-        <div style={{alignSelf: 'stretch', height: '970px', position: 'relative'}}>
-          <div style={{position: 'absolute', top: '0px', left: '0px', borderRadius: '50%', backgroundColor: '#9176b4', filter: 'blur(450px)', width: '314px', height: '336px'}} />
-          <img style={{position: 'absolute', top: '83px', left: '19px', width: '814px', height: '887px', overflow: 'hidden', zIndex: 1}} loading="eager" alt="" src={learning} />
-        </div>
-      </div>
-      <div style={{height: '895px', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 0px', boxSizing: 'border-box', minWidth: '562px', maxWidth: '100%'}}>
-        <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '77px', maxWidth: '100%', flexShrink: 0}}>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rammetto One:wght@400&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" />
+      <style
+        dangerouslySetInnerHTML={{
+          __html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    ",
+        }}
+      />
+      <div
+        style={{
+          width: '100%',
+          position: 'relative',
+          backgroundColor: '#1e1e1e',
+          overflow: 'hidden',
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'flex-end',
+          justifyContent: 'flex-start',
+          rowGap: '20px',
+          letterSpacing: 'normal',
+          textAlign: 'left',
+          fontSize: '80px',
+          color: '#fff',
+          fontFamily: '"Bodoni MT"',
+        }}
+      >
+        {/* Uncommented div (the one you want to appear above the image) */}
+        <div
+          style={{
+            height: '895px',
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            padding: '0px 0px 0px',
+            boxSizing: 'border-box',
+            minWidth: '562px',
+            maxWidth: '100%',
+          }}
+        >
+          {/* ... your content here ... */}
+
+
+
+          <div style={{height: '895px', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 0px', boxSizing: 'border-box', minWidth: '562px', maxWidth: '100%'}}>
+        <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '77px', maxWidth: '100%', flexShrink: 0,marginRight:'-150px'}}>
           <div style={{width: '831px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 20px 0px 0px', boxSizing: 'border-box', gap: '8px', maxWidth: '100%'}}>
             <h1 style={{margin: 0, width: '615px', height: '192px', position: 'relative', fontSize: 'inherit', fontWeight: 700, fontFamily: 'inherit', display: 'flex', alignItems: 'center', maxWidth: '100%'}}>
               <span style={{width: '100%'}}>
@@ -70,10 +103,98 @@ function Help() {
             <div style={{alignSelf: 'stretch', width: '346px', position: 'relative', borderRadius: '50%', backgroundColor: '#9176b4', filter: 'blur(450px)', maxWidth: '100%'}} />
           </div>
         </div>
+      </div> 
+
+
+
+          <h1
+            style={{
+              margin: 0,
+              width: '615px',
+              height: '192px',
+              position: 'relative',
+              fontSize: 'inherit',
+              fontWeight: 700,
+              fontFamily: 'inherit',
+              display: 'flex',
+              alignItems: 'center',
+              maxWidth: '100%',
+            }}
+          >
+            <span style={{ width: '100%' }}>
+              <span>Need help with your </span>
+              <span style={{ color: '#665b86' }}>Homework?</span>
+            </span>
+          </h1>
+          <div
+            style={{
+              alignSelf: 'stretch',
+              height: '76px',
+              position: 'relative',
+              fontSize: '32px',
+              fontWeight: 500,
+              fontFamily: 'Urbanist',
+              display: 'inline-block',
+            }}
+          >
+            Looking to verify your answers to previous year's questions? Look no further - we've got you covered!
+          </div>
+        </div>
+
+        {/* Image div */}
+        <div
+          style={{
+            flex: '0.9641',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            padding: '0px 31px 0px 0px',
+            boxSizing: 'border-box',
+            minWidth: '562px',
+            minHeight: '1117px',
+            maxWidth: '100%',
+          }}
+        >
+          {/* ... your content here ... */}
+          <div
+            style={{
+              alignSelf: 'stretch',
+              height: '970px',
+              position: 'relative',
+            }}
+          >
+            <div
+              style={{
+                position: 'absolute',
+                top: '0px',
+                left: '0px',
+                borderRadius: '50%',
+                backgroundColor: '#9176b4',
+                filter: 'blur(450px)',
+                width: '314px',
+                height: '336px',
+              }}
+            />
+            <img
+              style={{
+                position: 'absolute',
+                top: '83px',
+                left: '19px',
+                width: '814px',
+                height: '887px',
+                overflow: 'hidden',
+                zIndex: 1,
+              }}
+              loading="eager"
+              alt=""
+              src={learning}
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  )
+  );
 }
 
-export default Help
+export default Help;
