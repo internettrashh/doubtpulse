@@ -1,0 +1,381 @@
+.lund {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .lund .overlap-group-wrapper {
+    background-color: #1e1e1e;
+    height: 1117px;
+    overflow: hidden;
+    width: 1728px;
+  }
+  
+  .lund .overlap-group {
+    height: 1391px;
+    left: -237px;
+    position: relative;
+    top: -143px;
+    width: 2028px;
+  }
+  
+  
+  .lund .glow-right-centre {
+    background-color: #766191;
+    border-radius: 425px;
+    filter: blur(350px);
+    height: 850px;
+    left: 1178px;
+    position: absolute;
+    top: 518px;
+    width: 850px;
+  }
+  
+  .lund .div {
+    background-color: #766191;
+    border-radius: 425px;
+    filter: blur(350px);
+    height: 850px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 850px;
+  }
+  
+  .lund .frame {
+    height: 1013px;
+    left: 250px; /* Set left to 0 to move it to the left side */
+    position: absolute;
+    top: 200px; /* Set top to 0 to move it to the top */
+    width: 980px;
+}
+
+  
+  .lund .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px; /* Add padding to the left */
+}
+
+.lund .navbar {
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lund .logo {
+   
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 200px; /* Add margin to the right for spacing */
+}
+.lund .text-wrapper {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  /* Add margin to create space between the text items */
+  margin-right: 100px; /* Remove the extra "px" */
+}
+
+.lund .text-wrapper-4 {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  /* Add margin to create space between the text items */
+  margin-right: 20px;
+}
+
+/* If you want to remove the space between the last item and the edge, add margin-left to the first item */
+.lund .text-wrapper:first-child {
+    margin-left: 0;
+}
+
+
+  
+  .lund .yellow-wrapper {
+    height: 929px;
+    left: 1207px;
+    position: absolute;
+    top: 237px;
+    width: 200px;
+  }
+  
+  .lund .yellow {
+    height: 740px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .lund .purple-wrapper {
+    height: 1301px;
+    left: 1441px;
+    position: absolute;
+    top: 51px;
+    width: 200px;
+  }
+  
+  .lund .purple {
+    height: 633px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 92px;
+    width: 200px;
+  }
+  
+  .lund .light-blue-wrapper {
+    height: 727px;
+    left: 1675px;
+    position: absolute;
+    top: 338px;
+    width: 200px;
+  }
+  
+  .lund .light-blue {
+    height: 608px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .lund .green-wrapper {
+    height: 1379px;
+    left: 1675px;
+    position: absolute;
+    top: 12px;
+    width: 200px;
+  }
+  
+  .lund .green {
+    height: 443px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 805px;
+    width: 200px;
+  }
+  
+  .lund .empowering-learning-wrapper {
+    height: 531px;
+    left: 359px;
+    position: absolute;
+    top: 436px;
+    width: 743px;
+  }
+  
+  .lund .empowering-learning {
+    color: #ffffff;
+    font-family: "Inika-Bold", Helvetica;
+    font-size: 70px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -1px;
+  }
+  
+  .lund .get-started-button-wrapper {
+    height: 617px;
+    left: 359px;
+    position: absolute;
+    top: 393px;
+    width: 273px;
+  }
+  
+  .lund .get-started-button {
+    all: unset;
+    -webkit-backdrop-filter: blur(250px) brightness(100%);
+    backdrop-filter: blur(250px) brightness(100%);
+    background-color: #ffffff;
+    border-radius: 50px 50px 50px 0px;
+    box-shadow: 0px 10px 4px #00000040;
+    box-sizing: border-box;
+    height: 91px;
+    overflow: hidden;
+    position: relative;
+    top: 526px;
+  }
+  
+  .lund .div-wrapper {
+    all: unset;
+    background-color: #665b86;
+    border-radius: 50px 50px 50px 0px;
+    box-sizing: border-box;
+    height: 91px;
+    position: relative;
+    width: 273px;
+  }
+  
+  .lund .text-wrapper-5 {
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 36px;
+    font-weight: 600;
+    left: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 23px;
+  }
+  
+  .lund .orange-bubble-wrapper {
+    height: 577px;
+    left: 324px;
+    position: absolute;
+    top: 413px;
+    width: 23px;
+  }
+  
+  .lund .orange-bubble {
+    background-color: #fe9e24;
+    border-radius: 11.5px;
+    height: 23px;
+  }
+  
+  .lund .yellow-bubble-wrapper {
+    height: 1039px;
+    left: 1362px;
+    position: absolute;
+    top: 182px;
+    width: 39px;
+  }
+  
+  .lund .yellow-bubble {
+    background-color: #e6b921;
+    border-radius: 19.5px;
+    height: 39px;
+  }
+  
+  .lund .green-bubble-wrapper {
+    height: 387px;
+    left: 1880px;
+    position: absolute;
+    top: 508px;
+    width: 39px;
+  }
+  
+  .lund .green-bubble {
+    background-color: #66c264;
+    border-radius: 19.5px;
+    height: 39px;
+    position: relative;
+    top: 348px;
+  }
+  
+  .lund .red-bubble-wrapper {
+    height: 435px;
+    left: 1134px;
+    position: absolute;
+    top: 484px;
+    width: 39px;
+  }
+  
+  .lund .red-bubble {
+    background-color: #ec4c59;
+    border-radius: 19.5px;
+    height: 39px;
+    position: relative;
+    top: 396px;
+  }
+  
+  .lund .group {
+    height: 1301px;
+    left: 1207px;
+    position: absolute;
+    top: 35px;
+    width: 712px;
+  }
+  
+  .lund .group-2 {
+    height: 1301px;
+    position: relative;
+  }
+  
+  .lund .pink-wrapper {
+    height: 1267px;
+    left: 0;
+    position: absolute;
+    top: 17px;
+    width: 200px;
+  }
+  
+  .lund .pink {
+    height: 427px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 781px;
+    width: 200px;
+  }
+  
+  .lund .dark-blue-wrapper {
+    height: 1301px;
+    left: 234px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .lund .dark-blue {
+    height: 645px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 580px;
+    width: 200px;
+  }
+  
+  .lund .sign-in-button-wrapper {
+    height: 1051px;
+    left: 535px;
+    position: absolute;
+    top: 125px;
+    width: 177px;
+  }
+  
+  .lund .sign-in-button {
+    background-color: #ffffff;
+    border-radius: 30px 30px 0px 30px;
+    height: 61px;
+    overflow: hidden;
+  }
+  
+  .lund .sign-in-button-2 {
+    background-color: #665b85;
+    border-radius: 30px 30px 0px 30px;
+    height: 61px;
+    position: relative;
+    width: 177px;
+  }
+  
+  .lund .text-wrapper-6 {
+    cursor:pointer;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 30px;
+    font-weight: 600;
+    left: 33px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+    white-space: nowrap;
+  }

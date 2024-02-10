@@ -1,35 +1,50 @@
-import React from 'react'
+import React from 'react';
 
 function Contributors() {
   return (
-    <div>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni MT:wght@700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rammetto One:wght@400&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" />
-    <style dangerouslySetInnerHTML={{__html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
-    <div style={{width: '100%', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '335px', letterSpacing: 'normal'}}>
-      <div style={{alignSelf: 'stretch', height: '78px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-end', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
-        <header style={{height: '157px', width: '1897px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '110%', flexShrink: 0}}>
-          <div style={{alignSelf: 'stretch', width: '2077px', position: 'relative', borderRadius: '50%', backgroundColor: '#9176b4', filter: 'blur(350px)', maxWidth: '109%', flexShrink: 0}} />
-        </header>
-      </div>
-      <section style={{alignSelf: 'stretch', height: '704px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-end', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
-        <div style={{height: '900px', width: '1864px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '108%', flexShrink: 0}}>
-          <div style={{alignSelf: 'stretch', width: '2214px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', gap: '272px', maxWidth: '119%', flexShrink: 0}}>
-            <div style={{width: '684px', flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 20px', boxSizing: 'border-box', maxWidth: '100%'}}>
-              <div style={{alignSelf: 'stretch', width: '405px', position: 'relative', borderRadius: '50%', backgroundColor: '#9176b4', filter: 'blur(500px)', maxWidth: '100%'}} />
-            </div>
-            <footer style={{alignSelf: 'stretch', height: '223px', position: 'relative', borderRadius: '50%', backgroundColor: '#9176b4', filter: 'blur(350px)'}} />
-          </div>
+    <div style={{width: '100%', minHeight: '100vh', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', letterSpacing: 'normal'}}>
+      <header style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '157px'}}>
+        <h1 style={{color: 'white', fontSize: '2em'}}>Team Behind This</h1>
+        <br/>
+        <p style={{color:'white'}}>Aspiring tech alchemists, navigating the realms of Information Technology Engineering in our second year at Goa Engineering College. We conjure ingenious solutions for every challenge, turning the ordinary into the extraordinary!</p>
+      </header>
+      <section style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', width: '100%', padding: '0   20px'}}>
+        {/* Repeat the provided code for each div */}
+        <div style={{width: '30%', backgroundColor: 'transparent', border: '1px solid #ccc', borderRadius: '5px', padding: '20px', margin: '10px'}}>
+         
+
+<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+      <img/>
+      <h1>Parth Kamat</h1>
+
+    </div>
+</div>
+
+        </div>
+        <div style={{width: '30%', backgroundColor: 'transparent', border: '1px solid #ccc', borderRadius: '5px', padding: '20px', margin: '10px'}}>
+         
+
+<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+        
+    </div>
+</div>
+
+        </div>
+        <div style={{width: '30%', backgroundColor: 'transparent', border: '1px solid #ccc', borderRadius: '5px', padding: '20px', margin: '10px'}}>
+         
+
+<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+        
+    </div>
+</div>
+
         </div>
       </section>
     </div>
-  </div>
-  )
+  );
 }
 
-export default Contributors
+export default Contributors;
