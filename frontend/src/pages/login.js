@@ -82,9 +82,9 @@ function Login() {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" />
     <style dangerouslySetInnerHTML={{__html: "\n      body {\n        margin: 0;\n        line-height: normal;\n      }\n    " }} />
     <div style={{width: '100%', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '71px 98px 90px', boxSizing: 'border-box', gap: '226px', letterSpacing: 'normal', textAlign: 'left', fontSize: '48px', color: '#fff', fontFamily: 'Urbanist'}}>
-      <form onSubmit={(e) => { e.preventDefault(); handleSignUp(); }} style={{margin: 0, width: '584px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', gap: '47px', minWidth: '584px', maxWidth: '100%'}}>
+      <form onSubmit={(e) => { e.preventDefault(); handleSignUp(); }} style={{margin: '0', width: '584px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', gap: '47px', minWidth: '584px', maxWidth: '100%'}}>
         <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 11px'}}>
-          <h2 style={{margin: 0, position: 'relative', fontSize: '35px', letterSpacing: '-0.34px', fontWeight: 700, fontFamily: 'Urbanist', color: '#fff', textAlign: 'center'}}>
+          <h2 style={{margin: '0', position: 'relative', fontSize: '35px', letterSpacing: '-0.34px', fontWeight: 700, fontFamily: 'Urbanist', color: '#fff', textAlign: 'center'}}>
             Please enter your details
           </h2>
         </div>
@@ -164,53 +164,49 @@ function Login() {
         </div>
       </form>
     
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '90px 0px 53px', boxSizing: 'border-box', position: 'relative', gap: '104px', minWidth: '679px', maxWidth: '100%'}}>
-        <img style={{width: '100%', height: '100%', position: 'absolute', margin: '0 !important', top: '0px', right: '0px', bottom: '0px', left: '0px', maxWidth: '100%', overflow: 'hidden', maxHeight: '100%', zIndex: 1}} alt="" src={Rectangle} />
-        <div style={{width: '487px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', padding: '0px 0px 5px', boxSizing: 'border-box', gap: '65px', maxWidth: '100%', textAlign: 'center'}}>
-          <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 27px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '90px 0px 53px', boxSizing: 'border-box', marginRight:'500px', position: 'relative', gap: '104px', minWidth: '679px', maxWidth: '100%', marginLeft: '-50px'}}>
+    <img style={{width: '100%', height: '100%', position: 'absolute', margin: '0 !important', top: '0px', right: '0px', bottom: '0px', left: '0px', maxWidth: '100%', overflow: 'hidden', maxHeight: '100%', zIndex: 1}} alt="" src={Rectangle} />
+    <div style={{width: '487px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', padding: '0px 0px 5px', boxSizing: 'border-box', gap: '65px', maxWidth: '100%', textAlign: 'center'}}>
+        <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 27px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
             <h1 style={{margin: 0, height: '116px', flex: 1, position: 'relative', fontSize: 'inherit', letterSpacing: '-0.34px', fontWeight: 700, fontFamily: 'inherit', whiteSpace: 'pre-wrap', display: 'flex', alignItems: 'center', maxWidth: '100%', zIndex: 2}}>
-              <span>
-                <p style={{margin: 0}}>What’s Our</p>
-                <p style={{margin: 0}}>Lorem Ipsum Font</p>
-              </span>
-             
+                <span>
+                    <p style={{margin: 0}}>Explore</p>
+                    <p style={{margin: 0}}>The World of Knowledge</p>
+                </span>
             </h1>
-          </div>
-          <div style={{width: '444px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', position: 'relative', maxWidth: '100%', textAlign: 'left', fontSize: '20px'}}>
+        </div>
+        <div style={{width: '444px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', position: 'relative', maxWidth: '100%', textAlign: 'left', fontSize: '20px'}}>
             <div style={{height: '463px', width: '448px', position: 'absolute', margin: '0 !important', bottom: '-354px', left: '-348px', borderRadius: '50%', backgroundColor: '#9176b4', filter: 'blur(350px)'}} />
             <div style={{height: '72px', flex: 1, position: 'relative', letterSpacing: '-0.34px', fontWeight: 500, display: 'flex', alignItems: 'center', maxWidth: '100%', zIndex: 2}}>
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                "Unlock the power of instant learning! Sign up to Doubt Pulse and get answers to your math, physics, and theory questions by simply scanning images."
             </div>
-          </div>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-end', padding: '0px 34px 0px 43px', boxSizing: 'border-box', maxWidth: '100%', fontSize: '22px'}}>
-          <div style={{width: '602px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '13px', maxWidth: '100%'}}>
+    </div>
+    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-end', padding: '0px 34px 0px 43px', boxSizing: 'border-box', maxWidth: '100%', fontSize: '22px'}}>
+        <div style={{width: '602px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '13px', maxWidth: '100%'}}>
             <div style={{position: 'relative', letterSpacing: '-0.34px', fontWeight: 800, zIndex: 2}}>
-              Blah Blah Blah
+                Simplify Your Learning
             </div>
             <div style={{alignSelf: 'stretch', height: '72px', position: 'relative', fontSize: '20px', letterSpacing: '-0.34px', fontWeight: 500, display: 'flex', alignItems: 'center', zIndex: 2}}>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+                "Our cutting-edge technology empowers you to focus on understanding concepts, not just solving problems. Join us in revolutionizing the way you learn!"
             </div>
-          </div>
         </div>
-        <div style={{width: '649px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 43px', boxSizing: 'border-box', maxWidth: '100%', fontSize: '27px', color: '#000'}}>
-          <div style={{flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '31px 34px 45px', boxSizing: 'border-box', position: 'relative', maxWidth: '100%'}}>
+    </div>
+    <div style={{width: '649px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 43px', boxSizing: 'border-box', maxWidth: '100%', fontSize: '27px', color: '#000'}}>
+        <div style={{flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '31px 34px 45px', boxSizing: 'border-box', position: 'relative', maxWidth: '100%'}}>
             <img style={{height: '100%', width: '100%', position: 'absolute', margin: '0 !important', top: '0px', right: '0px', bottom: '0px', left: '0px', borderRadius: '15px', maxWidth: '100%', overflow: 'hidden', maxHeight: '100%', zIndex: 2}} loading="eager" alt="" src={whiteBottom} />
             <h3 style={{margin: 0, height: '64px', width: '403px', position: 'relative', fontSize: 'inherit', letterSpacing: '-0.34px', fontWeight: 800, fontFamily: 'inherit', display: 'flex', alignItems: 'center', flexShrink: 0, maxWidth: '100%', zIndex: 3}}>
-              Unt in culpa qui officia deserunt mollit anim id est laborum.
+                Unlock a World of Knowledge
             </h3>
             <div style={{width: '403px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '88px 0px 0px', boxSizing: 'border-box', maxWidth: '100%', marginLeft: '-403px', fontSize: '20px'}}>
-              <div style={{alignSelf: 'stretch', height: '72px', position: 'relative', letterSpacing: '-0.34px', fontWeight: 500, display: 'flex', alignItems: 'center', zIndex: 3}}>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur
-              </div>
+                <div style={{alignSelf: 'stretch', height: '72px', position: 'relative', letterSpacing: '-0.34px', fontWeight: 500, display: 'flex', alignItems: 'center', zIndex: 3}}>
+                    "Dive into a realm of knowledge where your questions are answered promptly. Experience learning like never before with Doubt Pulse!"
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+
     </div>
   
   </div>
