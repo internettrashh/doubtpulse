@@ -164,7 +164,7 @@ function Login() {
         </div>
       </form>
     
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '90px 0px 53px', boxSizing: 'border-box', marginRight:'500px', position: 'relative', gap: '104px', minWidth: '679px', maxWidth: '100%', marginLeft: '-50px'}}>
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '90px 0px 53px', boxSizing: 'border-box', marginRight:'500px', position: 'relative', gap: '104px', minWidth: '679px', maxWidth: '100%', marginLeft: '-150px'}}>
     <img style={{width: '100%', height: '100%', position: 'absolute', margin: '0 !important', top: '0px', right: '0px', bottom: '0px', left: '0px', maxWidth: '100%', overflow: 'hidden', maxHeight: '100%', zIndex: 1}} alt="" src={Rectangle} />
     <div style={{width: '487px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', padding: '0px 0px 5px', boxSizing: 'border-box', gap: '65px', maxWidth: '100%', textAlign: 'center'}}>
         <div style={{alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 27px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
