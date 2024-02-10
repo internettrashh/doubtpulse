@@ -73,6 +73,13 @@ function Home() {
 
 
 function renderContent() {
+
+  const prettifyAnswer = (answer) => {
+    // Split the answer into lines after each full stop
+    const lines = answer.split('.').map((line) => line.trim()).filter(Boolean);
+    // Join the lines with line breaks
+    return lines.join('.\n');
+  };
   return (
 
 
@@ -88,33 +95,33 @@ function renderContent() {
     <div style={{width: '100%', position: 'relative', backgroundColor: '#1e1e1e', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', padding: '37px 0px 0px', boxSizing: 'border-box', gap: '310px', letterSpacing: 'normal', textAlign: 'left', fontSize: '32px', color: '#fff', fontFamily: 'Urbanist'}}>
 
     {showAnswer ? (
-   <div style={{
-    width: '100vw', // Changed from '100%' to '100vw' to cover the full viewport width
-    height: '100vh', // Added to cover the full viewport height
-    
-    position: 'relative',
-    backgroundColor: '#1e1e1e',
-    overflow: 'auto', // Changed from 'hidden' to 'auto' to allow scrolling if content overflows
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '37px  0px  0px',
-    boxSizing: 'border-box',
-    gap: '310px',
-    letterSpacing: 'normal',
-    textAlign: 'left',
-    fontSize: '32px',
-    color: '#fff',
-    fontFamily: 'Urbanist'
-  }}>
-    <div style={{border:'6px',borderRadius:'20px' , borderColor:'white', width:'70vw', height:'10vh'}}>
-        <div style={{alignSelf: 'stretch', height: '78px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '100%'}}>
-        <h2 style={{ color: 'white ', fontSize: '30px' }}>Answer:</h2>
-      <Latex>{answer}</Latex>
-      </div>
-   </div>
-  </div>
+        <div style={{
+          width: '100vw',
+          height: '100vh',
+          position: 'relative',
+        
+          overflow: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '37px  0px  0px',
+          boxSizing: 'border-box',
+          gap: '310px',
+          letterSpacing: 'normal',
+          textAlign: 'left',
+          fontSize: '32px',
+          color: '#fff',
+          fontFamily: 'Urbanist'
+        }}>
+          <div style={{ border: '6px',  borderRadius: '20px', borderColor: 'white', width: '70vw', height: '60vw' }}>
+            <div style={{ alignSelf: 'stretch',backgroundImage:` url('../public/Answer_backgrond.jpeg')`, height: '70vw', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0px 0px 0px 0px', boxSizing: 'border-box', maxWidth: '100%' }}>
+              <h2 style={{ color: 'white ', fontSize: '30px' }}>Here Is Your Answer </h2>
+             
+            <Latex>{prettifyAnswer(answer)}</Latex>
+            </div>
+          </div>
+        </div>
       ):(
 <>
       <section style={{width: '1602px', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '0px 20px', boxSizing: 'border-box', position: 'relative', maxWidth: '100%', textAlign: 'left', fontSize: '60px', color: '#fff', fontFamily: 'Urbanist'}}>
