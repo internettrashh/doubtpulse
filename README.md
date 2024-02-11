@@ -10,7 +10,7 @@ We would like to inform you that the DoubtPulse application is currently optimiz
 To ensure the best experience and functionality, we recommend accessing DoubtPulse on a laptop or desktop computer. Our team is actively working on enhancing the application's responsiveness for a wider range of devices, and we appreciate your understanding and patience.
 
 ## Glimpses:
-![App SnapShot](/readmechitta/Landing.png) Landing
+![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/Landing.png) Landing
 
 ![App SnapShot](./readmechitta//About.png) About
 
