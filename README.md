@@ -1,12 +1,67 @@
-# doubtpulse
+# Doubtpulse
 
 Doubt Pulse is a powerful web application designed to help users solve doubts related to mathematics, physics, and various theoretical questions. Whether you're a student looking for assistance with your homework, a teacher aiming to provide additional resources, or a curious mind seeking answers, Doubt Pulse is here to streamline the process of doubt resolution.
 
 
-Glimpses OF our app:
+#### Note :
+
+We would like to inform you that the DoubtPulse application is currently optimized for laptops and desktop computers. While the application is fully functional on these devices, it may not provide an optimal user experience on mobile phones and tablets due to a lack of responsive design.
+
+To ensure the best experience and functionality, we recommend accessing DoubtPulse on a laptop or desktop computer. Our team is actively working on enhancing the application's responsiveness for a wider range of devices, and we appreciate your understanding and patience.
+
+## Glimpses:
+![App SnapShot](./readmechitta//Landing.png) Landing
+
+![App SnapShot](./readmechitta//About.png) About
+
+![App SnapShot](./readmechitta//Contributors.png) Contributors
+
+![App SnapShot](./readmechitta//Sign%20in.png) SignIN
+
+![App SnapShot](./readmechitta//Help.png) Help
+
+![App SnapShot](./readmechitta//home.math-sub.png) Home/Math
 
 
-Features:
+## Run Locally
+
+``` bash
+ git clone <repo_name>
+```
+```bash
+ cd doubtpulse
+```
+### Frontend
+``` bash
+ 1.cd frontend
+```
+```bash
+ 2.npm install
+```
+```bash
+ 3.npm start
+```
+### Backend
+```bash
+1.cd Backend
+```
+* Create and activate a virtual environment (assuming you're using virtualenv):
+``` bash
+2.python -m venv venv
+source venv/bin/activate   # On Windows, use "venv\Scripts\activate"
+```
+```bash
+3.pip install -r requirements.txt
+```
+```bash
+4.mkdir images (Create an image folder in backend if it doesnt exist)
+```
+```bash
+5.python app.py
+```
+
+
+## Features:
 
 1. Intuitive User Interface
 Doubt Pulse boasts a user-friendly interface, making it easy for users to navigate through different sections and submit their doubts effortlessly.
@@ -18,38 +73,12 @@ Users can submit their doubts in mathematics, physics, or any theoretical subjec
 Browse through categorized doubts to find answers to similar queries. This feature helps users explore related topics and enhances their understanding of the subject matter.
 
 
-Installation on Local Machine:
-
-1.git clone ( repo name  )
-2.cd doubtpulse
-
-For Frontend :
-
-1.cd frontend
-
-2.npm install
-
-3.npm start
-
-
-(pls run backend on virtual environment reference :https://code.visualstudio.com/docs/python/environments )
-
-here for reference:
-
-For Backend :
-
-1.cd backend
-
-2.pip3 install requirement.txt
-
-3.Also make an image folder if not there in backend 
-
-4.python app.py (plzz put your own open ai api key in app.py file )
+## Deployment
 
 
 
+## License
 
-
-
-License
 Doubt Pulse is licensed under the MIT License.
+
+
