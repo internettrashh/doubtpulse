@@ -26,7 +26,7 @@ To ensure the best experience and functionality, we recommend accessing DoubtPul
 ## Run Locally
 
 ``` bash
- git clone <repo_name>
+ git clone https://github.com/internettrashh/doubtpulse.git
 ```
 ```bash
  cd doubtpulse
