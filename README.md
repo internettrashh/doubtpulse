@@ -12,15 +12,15 @@ To ensure the best experience and functionality, we recommend accessing DoubtPul
 ## Glimpses:
 ![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/Landing.png) Landing
 
-![App SnapShot](./readmechitta//About.png) About
+![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/About.png) About
 
-![App SnapShot](./readmechitta//Contributors.png) Contributors
+![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/Contributors.png) Contributors
 
-![App SnapShot](./readmechitta//Sign%20in.png) SignIN
+![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/Sign%20in.png) SignIN
 
-![App SnapShot](./readmechitta//Help.png) Help
+![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/Help.png) Help
 
-![App SnapShot](./readmechitta//home.math-sub.png) Home/Math
+![App SnapShot](https://github.com/internettrashh/doubtpulse/blob/main/Readmechitta/home.math-sub.png) Home/Math
 
 
 ## Run Locally
