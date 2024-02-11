@@ -3,7 +3,11 @@
 Doubt Pulse is a powerful web application designed to help users solve doubts related to mathematics, physics, and various theoretical questions. Whether you're a student looking for assistance with your homework, a teacher aiming to provide additional resources, or a curious mind seeking answers, Doubt Pulse is here to streamline the process of doubt resolution.
 
 
+Glimpses OF our app:
+
+
 Features:
+
 1. Intuitive User Interface
 Doubt Pulse boasts a user-friendly interface, making it easy for users to navigate through different sections and submit their doubts effortlessly.
 
@@ -20,18 +24,30 @@ Installation on Local Machine:
 2.cd doubtpulse
 
 For Frontend :
+
 1.cd frontend
+
 2.npm install
+
 3.npm start
 
 
-(pls run backend on virtual environment )
+(pls run backend on virtual environment reference :https://code.visualstudio.com/docs/python/environments )
+
 here for reference:
+
 For Backend :
+
 1.cd backend
+
 2.pip3 install requirement.txt
+
 3.Also make an image folder if not there in backend 
+
 4.python app.py (plzz put your own open ai api key in app.py file )
+
+
+
 
 
 
