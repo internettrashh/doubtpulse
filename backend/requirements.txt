@@ -32,7 +32,7 @@ multidict==6.0.5
 networkx==3.2.1
 ninja==1.11.1.1
 numpy==1.26.4
-onnxruntime==1.17.0
+onnxruntime==1.16.3
 openai==0.28.0
 opencv-python==4.9.0.80
 opencv-python-headless==4.9.0.80
